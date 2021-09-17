@@ -88,13 +88,23 @@ input:focus {
   border-color: var(--red);
 }
 
+.error-icon {
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  /* background-size: contain; */
+}
+
 .error-msg {
   color: var(--red);
   text-align: right;
   font-style: italic;
   padding: 0 0.5rem;
   font-size: 0.7rem;
-  /* display: block; */
+}
+
+.error-fname {
+  display: none;
 }
 
 button {
