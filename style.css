@@ -67,14 +67,34 @@ form {
   box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.35);
 }
 
+.box-input {
+  /* border: 1px solid black; */
+  margin-bottom: 1rem;
+}
+
 input {
   display: block;
   width: 100%;
   padding: 1rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   border-radius: 0.5rem;
   border: 1px solid var(--grayishBlue);
   font-weight: 600;
+  outline: none;
+}
+
+input:focus {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.error-msg {
+  color: var(--red);
+  text-align: right;
+  font-style: italic;
+  padding: 0 0.5rem;
+  font-size: 0.7rem;
+  /* display: block; */
 }
 
 button {
@@ -159,6 +179,10 @@ form a {
     flex-direction: column;
     padding: 0 5rem;
   }
+
+  .error-msg {
+    font-size: 0.75rem;
+  }
 }
 
 @media (min-width: 85.312rem) {
@@ -178,9 +202,9 @@ form a {
     padding: 2.5rem;
   }
 
-  input {
+  /* input {
     margin-bottom: 1.5rem;
-  }
+  } */
 }
 
 @media (min-width: 90rem) {

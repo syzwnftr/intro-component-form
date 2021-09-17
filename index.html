@@ -23,10 +23,23 @@
 
         <div class="trial-form">
           <form action="">
-            <input type="text" id="firstname" name="firstname" placeholder="First Name">
-            <input type="text" id="lastname" name="lastname" placeholder="Last Name">
-            <input type="email" id="emailaddress" name="emailaddress" placeholder="Email Address">
-            <input type="password" id="pWord" name="pWord" placeholder="Password">
+            <div class="box-input first-name">
+              <input type="text" id="firstname" name="firstname" placeholder="First Name">
+              <p class="error-msg error-fname">First Name cannot be empty</p>
+            </div>
+            <div class="box-input last-name">
+              <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+              <p class="error-msg error-lname">Last Name cannot be empty</p>
+            </div>
+            <div class="box-input email-address">
+              <input type="email" id="emailaddress" name="emailaddress" placeholder="Email Address">
+              <p class="error-msg error-email">Looks like this is not an email</p>
+            </div>
+            <div class="box-input password">
+              <input type="password" id="pWord" name="pWord" placeholder="Password">
+              <p class="error-msg error-password">Password cannot be empty</p>
+            </div>
+            
             <button class="btn">Claim your free trial </button>
             <p>By clicking the button, you are agreeing to our <a href="">
               Terms and Services</a></p>
