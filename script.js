@@ -107,7 +107,6 @@ emailAddress.oninput = function() {
     errorEmail.style.display = 'none';
 }
 
-
 password.oninput = function() {
     password.classList.remove('error-icon');
     errorPword.style.display = 'none';
@@ -126,12 +125,10 @@ lastName.onchange = function() {
     
 }
 
-
 emailAddress.onchange = function() {     
     emailAddress.style.borderColor = 'var(--grayishBlue)';
     
 }
-
 
 password.onchange = function() {     
     password.style.borderColor = 'var(--grayishBlue)';
